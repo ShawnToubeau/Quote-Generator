@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 5rem;
+  background-color: #F2F0DB;
+  padding-left: 15%;
+  padding-right: 15%;
+  position: relative;
+}
+
+h1 {
+  font: 400 50px/1.3 'Tangerine', Helvetica, sans-serif;
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgba(#c2a16d, 0.4);
+  border: solid 3px #b78e51;
+  color: #b78e51;
+}
+
+button:hover {
+  background-color: #b78e51;
+  color: white;
+}
+
+#quoteDisplay {
+  height: 40px;
+  padding: 20px 50px 20px;
+  margin: -20px 20px 0;
+}
+
+hr.hrStyle {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.hrStyle:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  height: 20px;
+  background-color: #b78e51;
+  color: white;
+  text-align: center;
+}
+
+@-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, -5px);
+  }
+
+  50% {
+    transform: scale(1,1) translate(0px, 5px);
+  }
+
+ 100% {
+   transform: scale(1,1) translate(0px, -5px);
+  }
+}
+
+.bounce {
+     -webkit-animation: bounce 5s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  #quoteDisplay {
+    height: 120px;
+  }
+
+  body {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  footer {
+    height: 25px;
+  }
+}
